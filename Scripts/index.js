@@ -37,7 +37,6 @@ for (let i = 0; i < usuarios.length; i ++) {
 
 
         const mensagemErro = document.querySelector("#mensagem-erro");
-            mensagemErro.style.color = "red";
             mensagemErro.textContent = "Email ou senha inválidos";
 
     return false;   

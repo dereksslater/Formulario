@@ -18,14 +18,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 3px solid purple;
+    border: 2px solid purple;
     border-radius: 50px;
     height: 50%;
     width: 50%;
 }
 
 input {
-    border: 3px solid purple;
+    border: 1px solid purple;
     width: 50%;
 
 }

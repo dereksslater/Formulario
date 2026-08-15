@@ -1,27 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página-formulário</title>
-    <link rel="stylesheet" href="/Styles/index.css">
+    <link rel="stylesheet" href="/Styles/index.css" />
     <script type="module" src="/Scripts/index.js" defer></script>
-</head>
+  </head>
 
-<body>
-    <div class= "container">
-        <h1 id="formulario-titulo">Formulário</h1>
-        <form class="formulario-dentro">
+  <body>
+    <div class="container">
+      <h1 id="formulario-titulo">Formulário</h1>
+      <form class="formulario-dentro">
+        <!-- formulario-login -->
         <label for="email">email</label>
-        <input id="email" type="email" placeholder="Digite seu email">
+        <input
+          id="email"
+          class="input-login"
+          type="email"
+          placeholder="Digite seu email"
+        />
         <label for="senha">senha</label>
-        <input id="senha" type="password" placeholder="Digite sua senha">
+        <input
+          id="senha"
+          class="input-login"
+          type="password"
+          placeholder="Digite sua senha"
+        />
         <h1 id="mensagem-erro"></h1>
-        <button id="botao-form" type="button" >Entrar</button>
-        </form>
-
+        <button id="botao-form" type="button">Entrar</button>
+      </form>
     </div>
-
-    
-</body>
+  </body>
 </html>
+

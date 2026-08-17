@@ -10,7 +10,7 @@
 
 [ x ] 6 - começar com letras maiúscula na label.
 
-[ ] 7 - destacar as bordas dos inputs (quando clicado). obs: focus.
+[ x ] 7 - destacar as bordas dos inputs (quando clicado). obs: focus.
 
 [ ] 8 - diminuir a largura do botão entrar.
 

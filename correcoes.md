@@ -1,14 +1,14 @@
-[x] ~~1 - arrumar a responsividade dos elementos: conforme a tela mude de tamanho os elementos filhos devem herdar os tamanhos.~~
+[ x ] ~~1 - arrumar a responsividade dos elementos: conforme a tela mude de tamanho os elementos filhos devem herdar os tamanhos.~~
 
-[ x] 2 - email e senha no começo ou lado esquerdo.
+[ x ] 2 - email e senha no começo ou lado esquerdo.
 
-[x ] 3 - title formulário dentro do form.
+[ x ] 3 - title formulário dentro do form.
 
-[ ] 4 - cores diferentes.
+[ x ] 4 - cores diferentes.
 
-[ x] 5 - email e senhas em negritos.
+[ x ] 5 - email e senhas em negritos.
 
-[ x] 6 - começar com letras maiúscula na label.
+[ x ] 6 - começar com letras maiúscula na label.
 
 [ ] 7 - destacar as bordas dos inputs (quando clicado). obs: focus.
 

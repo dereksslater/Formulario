@@ -12,7 +12,7 @@
 
 [ x ] 7 - destacar as bordas dos inputs (quando clicado). obs: focus.
 
-[ ] 8 - diminuir a largura do botão entrar.
+[ x ] 8 - diminuir a largura do botão entrar.
 
 [ ] 9 - mudar tamanho erro.
 

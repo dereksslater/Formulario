@@ -2,7 +2,7 @@
 
 [ x] 2 - email e senha no começo ou lado esquerdo.
 
-[ ] 3 - title formulário dentro do form.
+[x ] 3 - title formulário dentro do form.
 
 [ ] 4 - cores diferentes.
 

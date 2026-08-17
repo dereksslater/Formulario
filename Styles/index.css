@@ -12,7 +12,7 @@
     align-items: center;
     min-height: 100vh;
     width: 100%;
-    background: linear-gradient(135deg, #5c75e8 0%, #764ba2 100%);
+    background-color: #1e293b;;
     padding: 20px;
 }
 
@@ -28,7 +28,7 @@
     width: 90%;
     max-width: 400px;
     min-width: 280px; 
-    background: rgba(255, 255, 255, 0.1);
+    background-color:#475569;
     backdrop-filter: blur(10px); 
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -42,7 +42,7 @@
 }
 
 .input-login {
-    border: 1px solid purple;
+    border: 1px solid #94a3b8;
     border-radius: 8px;
     width: 100%;
     padding: 12px;
@@ -52,7 +52,7 @@
 }
 
 input:focus {
-    border: 2px solid blueviolet;
+    border: 2px solid #3b82f6;
 }
 
 #botao-form {
@@ -60,7 +60,7 @@ input:focus {
     border: none;
     border-radius: 8px;
     padding: 12px;
-    background-color: rgb(194, 104, 194);
+    background-color:#3b82f6;;
     color: white;
     margin-top: 15px;
     font-weight: bold;
@@ -70,7 +70,7 @@ input:focus {
 }
 
 #botao-form:hover {
-    background-color: blueviolet;
+    background-color: #2563eb;
 }
 
 #mensagem-erro {

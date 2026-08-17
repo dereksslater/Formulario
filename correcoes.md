@@ -14,7 +14,7 @@
 
 [ x ] 8 - diminuir a largura do botão entrar.
 
-[ ] 9 - mudar tamanho erro.
+[ x ] 9 - mudar tamanho erro.
 
 [ ] 10 - a pessoa tenha uma senha de no mínimo 6 caracteres o botão de entrar fica desabilitado se a senha for menor.
 

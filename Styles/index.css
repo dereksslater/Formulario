@@ -75,10 +75,12 @@ input:focus {
 }
 
 #mensagem-erro {
-    color: #d93025;
-    font-size: 0.9rem;
-    font-weight: bold;
+    color: #ed2719;
+    font-size: 1rem;
+    font-weight: 900;
     text-align: center;
+    width: 100%;
     min-height: 20px;
-    margin-top: -10px;
+    margin-top: -5px;
+    align-self: center; 
 }

@@ -95,3 +95,29 @@ input:focus {
     margin-top: -5px;
     align-self: center; 
 }
+
+
+.senha-container {
+    position: relative;
+    width: 100%; 
+}
+
+
+#senha {
+    padding-right: 45px; 
+}
+
+#icone-olho {
+    position: absolute;
+    right: 15px; 
+    top: 50%;
+    transform: translateY(-50%); 
+    cursor: pointer;
+    color: #475569; 
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+#icone-olho:hover {
+    color: #1e293b; 
+}

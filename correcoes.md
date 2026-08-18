@@ -18,6 +18,6 @@
 
 [ x ] 10 - a pessoa tenha uma senha de no mínimo 6 caracteres o botão de entrar fica desabilitado se a senha for menor.
 
-[ ] 11 - botão de olho (icon) = clicou viu senha. toggle.
+[ x ] 11 - botão de olho (icon) = clicou viu senha. toggle.
 
 [ x ] 12 - validação do formato de email. (@ e .) obrigatório, pesquisar regex para validar email.

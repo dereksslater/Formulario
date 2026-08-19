@@ -14,13 +14,13 @@ inputEmail.addEventListener("input", verificarCampos);
 inputSenha.addEventListener("input", verificarCampos);
 
 olhoSenha.addEventListener("click", function () {
-  // Verifica se a senha está escondida
+
   if (inputSenha.type === "password") {
-    // Mostra a senha e muda para o ícone de olho cortado
+  
     inputSenha.type = "text";
     olhoSenha.classList.replace("fa-eye", "fa-eye-slash");
   } else {
-    // Esconde a senha e muda de volta para o ícone normal
+  
     inputSenha.type = "password";
     olhoSenha.classList.replace("fa-eye-slash", "fa-eye");
   }

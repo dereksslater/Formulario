@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.titulos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#texto-biografia {
+    color: black;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-weight: normal;
+}
+
+.conteudo {
+    position: absolute;
+    top: 120px; 
+    left: 18rem; 
+    padding: 20px;
+    max-width: 60%; 
+}

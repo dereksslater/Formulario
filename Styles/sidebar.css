@@ -32,11 +32,3 @@ font-weight: bold;
 
 
 }
-#titulo-inicio {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-
-}

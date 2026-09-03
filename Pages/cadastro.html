@@ -1,51 +1,139 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>cadastro</title>
+    <title>Cadastro</title>
     <link rel="stylesheet" href="../Styles/index.css" />
   </head>
   <body>
     <div class="estrutura-container">
+      
       <div class="sidebar-content">
         <div class="sidebar">
           <img
             class="logo-img"
             src="https://cdn-icons-png.flaticon.com/512/552/552250.png"
-            alt=""
+            alt="Logo"
           />
           <a href="dashboard.html" class="botao-sidebar" id="botao-inicio"
-            >inicio</a
+            >Início</a
           >
           <a href="sobremim.html" class="botao-sidebar" id="botao-sobremim"
-            >sobre mim</a
+            >Sobre mim</a
           >
-          <a href="cadastro.html" class="botao-sidebar" id="botao-cadastro"
-            >cadastro</a
+          <a href="cadastro.html" class="botao-sidebar" id="botao-menu-cadastro"
+            >Cadastro</a
           >
-          <a href="../index.html" class="botao-sidebar" id="botao-sair">sair</a>
+          <a href="../index.html" class="botao-sidebar" id="botao-sair">Sair</a>
         </div>
       </div>
+
+      
       <div class="main-content">
-        <div class="title-area">
-          <h1 class="titulos">cadastro</h1>
-        </div>
         <div class="body-area">
-          <div class="conteudo">
-            <p class="texto-conteudo">
-              Lorem Ipsum é simplesmente um texto fictício da indústria
-              tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício
-              padrão da indústria desde 1966, quando os designers da Letraset e
-              James Mosley, o bibliotecário da St Bride Printing Library em
-              Londres, pegaram uma tradução de Cícero de 1914 e a embaralharam
-              para criar um texto fictício para as folhas de tipos da Letraset.
-              Ele sobreviveu não apenas a muitas décadas, mas também à transição
-              para a editoração eletrônica, permanecendo essencialmente
-              inalterado. Foi popularizado graças a essas folhas e, mais
-              recentemente, com softwares de editoração eletrônica como o Aldus
-              PageMaker e o Microsoft Word, que incluíam versões de Lorem Ipsum.
-            </p>
+          <div class="conteudo-cadastro">
+            <form class="formulario-cadastro" id="formCadastro">
+              <h1 id="form-titulo">Cadastro</h1>
+
+              
+              <div class="nome-cadastro">
+                <label for="nome">Nome completo</label>
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  class="input-cadastro"
+                  placeholder="Digite seu nome"
+                />
+              </div>
+
+             
+              <div class="data-nascimento">
+                <label for="data-nasc">Data de nascimento</label>
+                <input
+                  type="date"
+                  id="data-nasc"
+                  name="dataNasc"
+                  class="input-cadastro"
+                />
+              </div>
+
+              
+              <div class="genero-cadastro">
+                <p>Selecione seu gênero:</p>
+                <input
+                  type="radio"
+                  id="feminino"
+                  name="genero"
+                  value="feminino"
+                />
+                <label for="feminino">Feminino</label><br />
+
+                <input
+                  type="radio"
+                  id="masculino"
+                  name="genero"
+                  value="masculino"
+                />
+                <label for="masculino">Masculino</label><br />
+
+                <input type="radio" id="outro" name="genero" value="outro" />
+                <label for="outro">Outro</label>
+              </div>
+
+          
+              <div class="email-cadastro">
+                <label for="email-cadastro">Email</label>
+                <input
+                  type="email"
+                  id="email-cadastro"
+                  name="email"
+                  class="input-cadastro"
+                  placeholder="Digite seu email"
+                />
+              </div>
+
+             
+              <div class="senha-cadastro">
+                <label for="senha-cadastro">Senha</label>
+                <input
+                  type="password"
+                  id="senha-cadastro"
+                  name="senha"
+                  class="input-cadastro"
+                  placeholder="Crie uma senha"
+                />
+              </div>
+
+            
+              <div class="profissao-cadastro">
+                <label for="profissao">Profissão</label>
+                <input
+                  type="text"
+                  id="profissao"
+                  name="profissao"
+                  class="input-cadastro"
+                  placeholder="Digite sua profissão"
+                />
+              </div>
+
+           
+              <div class="endereco">
+                <label for="endereco">Endereço</label>
+                <input
+                  type="text"
+                  id="endereco"
+                  name="endereco"
+                  class="input-cadastro"
+                  placeholder="Rua, Número, Bairro"
+                />
+              </div>
+
+
+
+              <button id="botao-cadastro" type="submit">Cadastrar</button>
+            </form>
           </div>
         </div>
       </div>

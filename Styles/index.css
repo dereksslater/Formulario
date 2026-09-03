@@ -1,7 +1,8 @@
 @import "./sidebar.css";
 @import "./titulos.css";
 @import "./container-sobremim.css";
-@import "./estrutura.css";
+@import "estrutura.css";
+@import "cadastro.css";
 
 * {
     margin: 0;

@@ -2,23 +2,29 @@
     border: 1px solid #94a3b8;
     border-radius: 8px;
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     outline: none;
     font-size: 1rem;
     background-color: rgba(255, 254, 254, 0.8); 
+}
+
+.body-area {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
 }
 
 
 
 
 .conteudo-cadastro{
-      display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     font-weight: bold;
     gap: 20px;
-    padding: 40px;
+    padding: 20px;
     border-radius: 20px;
     width: 90%;
     max-width: 400px;
@@ -37,3 +43,25 @@
     justify-content: center;
     margin-bottom: 15px;
 }
+
+
+
+#botao-cadastro {
+    width: 200px;
+    display: block;
+    margin: 20px auto 0 auto;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    background-color:blueviolet;
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#botao-cadastro:hover {
+    background-color: #1eb48f;
+ }

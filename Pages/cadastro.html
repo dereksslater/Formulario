@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cadastro</title>
     <link rel="stylesheet" href="../Styles/index.css" />
+    <script type="module" src="/Scripts/cadastro.js" defer></script>
   </head>
   <body>
     <div class="estrutura-container">
-      
       <div class="sidebar-content">
         <div class="sidebar">
           <img
@@ -22,23 +22,19 @@
           <a href="sobremim.html" class="botao-sidebar" id="botao-sobremim"
             >Sobre mim</a
           >
-          <a href="cadastro.html" class="botao-sidebar" 
-            >Cadastro</a
-          >
+          <a href="cadastro.html" class="botao-sidebar">Cadastro</a>
           <a href="../index.html" class="botao-sidebar" id="botao-sair">Sair</a>
         </div>
       </div>
 
-      
       <div class="main-content">
         <div class="body-area">
           <div class="conteudo-cadastro">
             <form class="formulario-cadastro" id="formCadastro">
               <h1 id="form-titulo">Cadastro</h1>
 
-              
               <div class="nome-cadastro">
-                <label for="nome">Nome completo</label>
+                <label>Nome completo</label>
                 <input
                   type="text"
                   id="nome"
@@ -48,7 +44,6 @@
                 />
               </div>
 
-             
               <div class="data-nascimento">
                 <label for="data-nasc">Data de nascimento</label>
                 <input
@@ -59,7 +54,6 @@
                 />
               </div>
 
-              
               <div class="genero-cadastro">
                 <p>Selecione seu gênero:</p>
                 <input
@@ -82,7 +76,6 @@
                 <label for="outro">Outro</label>
               </div>
 
-          
               <div class="email-cadastro">
                 <label for="email-cadastro">Email</label>
                 <input
@@ -94,7 +87,6 @@
                 />
               </div>
 
-             
               <div class="senha-cadastro">
                 <label for="senha-cadastro">Senha</label>
                 <input
@@ -106,7 +98,6 @@
                 />
               </div>
 
-            
               <div class="profissao-cadastro">
                 <label for="profissao">Profissão</label>
                 <input
@@ -118,7 +109,6 @@
                 />
               </div>
 
-           
               <div class="endereco">
                 <label for="endereco">Endereço</label>
                 <input
@@ -129,8 +119,6 @@
                   placeholder="Rua, Número, Bairro"
                 />
               </div>
-
-
 
               <button id="botao-cadastro" type="submit">Cadastrar</button>
             </form>

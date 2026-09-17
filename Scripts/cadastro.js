@@ -11,6 +11,7 @@ function capturarDados() {
   const dadosUsuario = {
     nome: inputNome.value,
     nascimento: inputNascimento.value,
+    
     genero: document.querySelector('input[name="genero"]:checked')?.value,
     email: inputEmailCadastro.value,
     senha: inputSenhaCadastro.value,

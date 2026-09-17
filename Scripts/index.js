@@ -1,6 +1,7 @@
 import { usuarios } from "./data.js";
 
 const inputEmail = document.querySelector("#email");
+const inputApelido = document.querySelector("#apelido");
 const inputSenha = document.querySelector("#senha");
 const botaoForm = document.querySelector("#botao-form");
 const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

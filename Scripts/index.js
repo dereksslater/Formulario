@@ -7,6 +7,8 @@ const botaoForm = document.querySelector("#botao-form");
 const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const mensagemErroEmail = document.querySelector("#mensagemErroEmail");
 const olhoSenha = document.querySelector("#icone-olho");
+const mensagemErroApelido = document.querySelector("#mensagemErroApelido");
+const mensagemErro = document.querySelector("#mensagem-erro");
 
 botaoForm.disabled = true;
 botaoForm.setAttribute("aria-disabled", "true");
@@ -15,13 +17,10 @@ inputEmail.addEventListener("input", verificarCampos);
 inputSenha.addEventListener("input", verificarCampos);
 
 olhoSenha.addEventListener("click", function () {
-
   if (inputSenha.type === "password") {
-  
     inputSenha.type = "text";
     olhoSenha.classList.replace("fa-eye", "fa-eye-slash");
   } else {
-  
     inputSenha.type = "password";
     olhoSenha.classList.replace("fa-eye-slash", "fa-eye");
   }
@@ -45,6 +44,20 @@ botaoForm.addEventListener("click", (event) => {
 
   const emailValor = inputEmail.value;
   const senhaValor = inputSenha.value;
+  const apelidoValor = inputApelido.value;
+
+  if (mensagemErroApelido) mensagemErroApelido.textContent = "";
+  if (mensagemErro) mensagemErro.textContent = "";
+
+  if (apelidoValor.length < 3) {
+    if (mensagemErroApelido) {
+      mensagemErroApelido.textContent =
+        "O apelido deve ter pelo menos 3 caracteres.";
+    }
+    return;
+  }
+
+  console.log(apelidoValor);
 
   let permissaoUsuario;
 
@@ -69,6 +82,11 @@ botaoForm.addEventListener("click", (event) => {
 
     return false;
   }
+
+  localStorage.setItem("apelidoUsuario", apelidoValor);
+  localStorage.setItem("apelidoUsuario", apelidoValor);
+  localStorage.setItem("emailUsuario", emailValor);
+  localStorage.setItem("senhaUsuario", senhaValor);
 
   window.location.href = "../Pages/dashboard.html";
 });

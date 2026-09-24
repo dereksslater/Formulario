@@ -46,7 +46,24 @@ function capturarDados() {
     linguagens: linguagensSelecionadas,
   };
 
-  console.log(dadosUsuario);
+  let listaUsuarios =
+    JSON.parse(localStorage.getItem("listaDeCadastros")) || [];
+
+  
+  listaUsuarios.push(dadosUsuario);
+
+  localStorage.setItem("listaDeCadastros", JSON.stringify(listaUsuarios));
+
+  
+
+  
+  alert("Usuário cadastrado com sucesso!");
+
+  
+  console.log("Lista completa salva:", listaUsuarios);
+
+  
+  document.querySelector("#formCadastro").reset();
 }
 
 botaoSalvar.addEventListener("click", function (event) {

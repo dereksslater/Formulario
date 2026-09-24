@@ -9,16 +9,18 @@
 }
 
 .body-area {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 30px;
+    margin: 7vh;
 }
 
 
 
 
 .conteudo-cadastro{
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;

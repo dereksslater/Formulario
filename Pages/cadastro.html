@@ -1,42 +1,21 @@
-<!doctype html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cadastro</title>
-    <link rel="stylesheet" href="../Styles/index.css" />
-    <script type="module" src="/Scripts/cadastro.js" defer></script>
-    <script src="../Scripts/carregarApelido.js" defer></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="../Styles/global.css" />
+  <link rel="stylesheet" href="../Styles/pages/estrutura.css" />
+  <link rel="stylesheet" href="../Styles/components/sidebar.css" />
+  <link rel="stylesheet" href="../Styles/pages/cadastro.css" />
+  <script src="../Scripts/components/sidebar.js" defer></script>
+  <script src="../Scripts/components/input.js" defer></script>
+  <script src="../Scripts/components/radio-group.js" defer></script>
+  <script src="../Scripts/components/checkbox-group.js" defer></script>
+  <script src="../Scripts/pages/cadastro.js" defer></script>
+</head>
   <body>
     <div class="estrutura-container">
       <div class="sidebar-content">
-        <div class="sidebar">
-          <img
-            class="logo-img"
-            src="https://cdn-icons-png.flaticon.com/512/552/552250.png"
-            alt="Logo"
-          />
-
-          <div
-            id="apelido-valor"
-            style="
-              text-align: center;
-              color: white;
-              margin-bottom: 15px;
-              font-weight: bold;
-            "
-          ></div>
-
-          <a href="dashboard.html" class="botao-sidebar" id="botao-inicio"
-            >Início</a
-          >
-          <a href="sobremim.html" class="botao-sidebar" id="botao-sobremim"
-            >Sobre mim</a
-          >
-          <a href="cadastro.html" class="botao-sidebar">Cadastro</a>
-          <a href="../index.html" class="botao-sidebar" id="botao-sair">Sair</a>
-        </div>
+        <div id="sidebar" data-pagina="Cadastro"></div>
       </div>
 
       <div class="main-content">
@@ -44,129 +23,6 @@
           <div class="conteudo-cadastro">
             <form class="formulario-cadastro" id="formCadastro">
               <h1 id="form-titulo">Cadastro</h1>
-
-              <div class="nome-cadastro">
-                <label>Nome completo</label>
-                <input
-                  type="text"
-                  id="nome"
-                  name="nome"
-                  class="input-cadastro"
-                  placeholder="Digite seu nome"
-                />
-              </div>
-
-              <div class="data-nascimento">
-                <label for="data-nasc">Data de nascimento</label>
-                <input
-                  type="date"
-                  id="data-nasc"
-                  name="dataNasc"
-                  class="input-cadastro"
-                />
-              </div>
-
-              <div class="genero-cadastro">
-                <p>Selecione seu gênero:</p>
-                <input
-                  type="radio"
-                  id="feminino"
-                  name="genero"
-                  value="feminino"
-                />
-                <label for="feminino">Feminino</label><br />
-
-                <input
-                  type="radio"
-                  id="masculino"
-                  name="genero"
-                  value="masculino"
-                />
-                <label for="masculino">Masculino</label><br />
-
-                <input type="radio" id="outro" name="genero" value="outro" />
-                <label for="outro">Outro</label>
-              </div>
-
-              <div class="linguagens-cadastro">
-                <p>Selecione suas linguagens:</p>
-
-                <input
-                  type="checkbox"
-                  id="javaScript"
-                  name="linguagens"
-                  value="javaScript"
-                />
-                <label for="javaScript">JavaScript</label> <br />
-
-                <input
-                  type="checkbox"
-                  id="python"
-                  name="linguagens"
-                  value="python"
-                />
-                <label for="python">Python</label> <br />
-
-                <input
-                  type="checkbox"
-                  id="java"
-                  name="linguagens"
-                  value="java"
-                />
-                <label for="java">Java</label> <br />
-
-                <input
-                  type="checkbox"
-                  id="typeScript"
-                  name="linguagens"
-                  value="typeScript"
-                />
-                <label for="typeScript">TypeScript</label> <br />
-              </div>
-
-              <div class="email-cadastro">
-                <label for="email-cadastro">Email</label>
-                <input
-                  type="email"
-                  id="email-cadastro"
-                  name="email"
-                  class="input-cadastro"
-                  placeholder="Digite seu email"
-                />
-              </div>
-
-              <div class="senha-cadastro">
-                <label for="senha-cadastro">Senha</label>
-                <input
-                  type="password"
-                  id="senha-cadastro"
-                  name="senha"
-                  class="input-cadastro"
-                  placeholder="Crie uma senha"
-                />
-              </div>
-
-              <div class="profissao-cadastro">
-                <label for="profissao">Profissão</label>
-                <input
-                  type="text"
-                  id="profissao"
-                  name="profissao"
-                  class="input-cadastro"
-                  placeholder="Digite sua profissão"
-                />
-              </div>
-
-              <div class="endereco">
-                <label for="endereco">Endereço</label>
-                <input
-                  type="text"
-                  id="endereco"
-                  name="endereco"
-                  class="input-cadastro"
-                  placeholder="Rua, Número, Bairro"
-                />
-              </div>
 
               <button id="botao-cadastro" type="submit">Cadastrar</button>
             </form>

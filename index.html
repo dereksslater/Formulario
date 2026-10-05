@@ -1,21 +1,17 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página-formulário</title>
-    <link rel="stylesheet" href="/Styles/index.css" />
-    <script type="module" src="/Scripts/index.js" defer></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
-  </head>
-
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página-formulário</title>
+  <link rel="stylesheet" href="./Styles/global.css" />
+  <link rel="stylesheet" href="./Styles/pages/index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <script type="module" src="./Scripts/pages/index.js"></script>
+</head>
   <body>
     <div class="container">
       <form class="formulario-conteudo">
         <h1 id="formulario-titulo">Formulário</h1>
+
         <label for="apelido">Apelido</label>
         <input
           id="apelido"
@@ -23,8 +19,7 @@
           type="text"
           placeholder="Digite seu apelido"
         />
-
-        <span id="mensagemErroApelido" class="mensagem-erro"></span>
+        <span class="mensagem-erro-apelido"></span>
 
         <label for="email">Email</label>
         <input
@@ -33,6 +28,7 @@
           type="email"
           placeholder="Digite seu email"
         />
+
         <label for="senha">Senha</label>
         <div class="senha-container">
           <input
@@ -43,7 +39,8 @@
           />
           <i class="fa-regular fa-eye" id="icone-olho"></i>
         </div>
-        <p id="mensagem-erro"></p>
+
+        <p class="mensagem-erro-login"></p>
         <button id="botao-form" type="button">Entrar</button>
       </form>
     </div>

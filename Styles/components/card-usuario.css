@@ -1,0 +1,26 @@
+.card-usuario {
+    background-color: #475569;
+    color: white;
+    border-radius: 16px;
+    padding: 1.5rem;
+    width: 300px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.card-usuario h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.card-usuario p {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+    color: #e2e8f0;
+}
+
+#lista-usuarios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}

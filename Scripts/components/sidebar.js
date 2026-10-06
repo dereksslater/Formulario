@@ -3,6 +3,7 @@ function Sidebar(paginaAtiva) {
     { label: "Início", href: "dashboard.html" },
     { label: "Sobre mim", href: "sobremim.html" },
     { label: "Cadastro", href: "cadastro.html" },
+    { label: "Usuários", href: "usuarios.html" },
     { label: "Sair", href: "../index.html" },
   ];
 
@@ -12,11 +13,15 @@ function Sidebar(paginaAtiva) {
   nav.innerHTML = `
     <img class="logo-img" src="https://cdn-icons-png.flaticon.com/512/552/552250.png" alt="Logo" />
     <div id="apelido-valor"></div>
-    ${items.map(item => `
+    ${items
+      .map(
+        (item) => `
       <a href="${item.href}" class="botao-sidebar ${item.label === paginaAtiva ? "ativo" : ""}">
         ${item.label}
       </a>
-    `).join("")}
+    `,
+      )
+      .join("")}
   `;
 
   return nav;

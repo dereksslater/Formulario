@@ -26,12 +26,13 @@
     font-weight: bolder;
     border: 1px solid white;
     width: 60%;
-    height: 8%;
+    padding: 0.5rem 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 1.5rem;
     border-radius: 16px;
+    font-size: clap(0.7rem,1.5vw,1rem);
   
 
 

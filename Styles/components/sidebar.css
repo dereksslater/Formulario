@@ -1,12 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 .sidebar {
-    background-color: blueviolet;
+    background-color: var(--cor-sidebar);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,17 +7,13 @@
     width: 80%;
     border-radius: 16px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-
-
-
-
 }
 
 .botao-sidebar {
-    text-decoration:none;
-    color: white;
+    text-decoration: none;
+    color: var(--cor-texto-claro);
     font-weight: bolder;
-    border: 1px solid white;
+    border: 1px solid var(--cor-texto-claro);
     width: 60%;
     padding: 0.5rem 1rem;
     display: flex;
@@ -32,24 +21,16 @@
     justify-content: center;
     margin-top: 1.5rem;
     border-radius: 16px;
-    font-size: clap(0.7rem,1.5vw,1rem);
-  
-
-
+    font-size: clamp(0.7rem, 1.5vw, 1rem);
 }
 
 .botao-sidebar:hover {
-    background-color: white;
+    background-color: var(--cor-texto-claro);
     color: black;
     transition: .4s;
-
 }
-
 
 .logo-img {
     width: 50%;
     margin-top: 2rem;
-    
 }
-
-

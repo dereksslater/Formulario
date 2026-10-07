@@ -1,9 +1,22 @@
+:root {
+    --cor-fundo-escuro: #1e293b;      /* fundo da página de login */
+    --cor-card: #475569;              /* fundo do formulário e cards */
+    --cor-sidebar: blueviolet;        /* fundo da sidebar */
+    --cor-botao: #3b82f6;             /* botão entrar */
+    --cor-botao-hover: #2563eb;       /* botão entrar ao passar o mouse */
+    --cor-input-borda: #94a3b8;       /* borda dos inputs */
+    --cor-input-foco: #3b82f6;        /* borda do input em foco */
+    --cor-erro: #ed2719;              /* mensagens de erro */
+    --cor-texto-claro: white;         /* textos brancos */
+    --cor-borda-card: #e2e8f0;        /* bordas dos cards de usuário */
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     font-size: clamp(0.875rem, 1.5vw, 1rem);
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
 }
 
 body {
